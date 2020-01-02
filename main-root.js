@@ -38,7 +38,7 @@ const util = require('util'),
           '¡No se ha podido contectar a la base de datos!\nError:' + err
         );
       });
-    let web = new (require('./main-web'))(Client);
+    let web = new (require('./main-web'))(client);
     setInterval(() => {
       web.client = client;
     }, 5000);
